@@ -1,0 +1,735 @@
+body{
+    font-family: 'Cairo', sans-serif;
+}
+:root{
+    --p-color:#777;
+}
+/* start header ###############################*/
+header .navbar .box p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+header .navbar .box span{
+    font-size: 16px;
+    color: var(--p-color);
+}
+header .navbar .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(207, 78, 39);
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 1s;
+}
+header .navbar .search:hover{
+    background-color: #0f4c81;
+    color: #fff;
+    border: 0;
+}
+header .navbar .search:hover span{
+    color: #fff;
+}
+header .navbar .search i{
+    margin-right: 5px;
+}
+header .nav{
+    margin-top: 20px;
+    background-color: #0f4c81;
+    padding: 10px 0;
+}
+header .nav h1 {
+    cursor: pointer;
+}
+header .nav .container,
+header .nav .container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header .nav .container h1{
+    color: #fff;
+    font-size: 30px;
+}
+header .nav .container ul li{
+    margin:0 50px;
+    align-items: center;
+}
+header .nav .container ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 20px;
+}
+header .nav .container .menu div{
+    width: 30px;
+    margin: 4px 0;
+    height: 3px;
+    background-color: #ffa372;
+    transition: all .5s;
+}
+header .nav .container .menu:hover .one{
+    width: 15px;
+}
+header .landing{
+    background: url(../images/b1.jpg) no-repeat center/cover fixed;
+    height: 80vh;
+}
+header .landing .info{
+    width: 550px;
+    padding: 30px;
+    background:#fff;
+    position: absolute;
+    margin-top: 5%;
+}
+header .landing .info span{
+    color: #ed6662;
+    font-size: 17px;
+}
+header .landing .info h2{
+    margin: 20px 0;
+}
+header .landing .info .contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .landing .info .contain .box i{
+    color: #ed6662;
+    font-size: 25px;
+}
+header .landing .info .contain .box p{
+    font-size: 20px;
+    color: rgb(48, 47, 47);
+    margin: 10px 0 50px;
+}
+header .landing .info a{
+    text-decoration: none;
+    background-color: #0f4c81;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 600px) {
+    header .none,
+    header .ul li{
+        display: none;
+    }
+    header .landing .info {
+        width: 80%;
+        margin-left: 20px;
+    }
+    header .landing .info .contain{
+        display: none;
+    }
+    header .landing .info h2 {
+        margin:50px 0;
+    }
+}
+@media only screen and (min-width: 600px){
+header .none,
+    header .ul li {
+        display: none;
+    }
+
+    header .landing .info {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    header .landing .info .contain {
+        display: none;
+    }
+
+    header .landing .info h2 {
+        margin: 50px 0;
+    }
+}
+@media only screen and (min-width: 768px) {
+    header .none,
+    header .ul li {
+        display: none;
+    }
+
+    header .landing .info {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    header .landing .info .contain {
+        display: none;
+    }
+
+    header .landing .info h2 {
+        margin: 50px 0;
+    }   
+}
+@media only screen and (min-width: 992px) {
+    header .none,
+    header .ul li {
+        display: block;
+    }
+
+    header .landing .info {
+        width: 550px;
+        margin: 20px 0;
+    }
+
+    header .landing .info .contain {
+        display: flex;
+    }
+
+    header .landing .info h2 {
+        margin: 25px 0;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    header .none,
+    header .ul li {
+        display: block;
+    }
+
+    header .landing .info {
+        width: 550px;
+        margin: 20px 0;
+    }
+
+    header .landing .info .contain {
+        display: flex;
+    }
+
+    header .landing .info h2 {
+        margin: 30px 0;
+    }
+}
+/* end header ################################## */
+
+/* start Property ############################# */
+.Property{
+    padding: 70px 0;
+}
+.Property .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Property .container .box{
+    width: 50%;
+}
+.Property .container .spical{
+    padding: 0 20px;
+}
+.Property .container .box h2{
+    font-size: 35px;
+}
+.Property .container .box p{
+    font-size: 18px;
+    color: var(--p-color);
+    margin: 30px 0;
+}
+.Property .container .box a{
+    text-decoration: none;
+    background-color: #ed6663;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+}
+.Property .container .box img{
+    width: 100%
+}
+@media only screen and (max-width: 600px) {
+    .Property .container {
+        flex-direction: column;
+    }
+    .Property .container .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .Property .container {
+        flex-direction: column;
+    }
+    .Property .container .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Property .container {
+            flex-direction: column;
+    }
+    .Property .container .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Property .container {
+            flex-direction: row;
+    }
+    .Property .container .box {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Property .container {
+            flex-direction: row;
+    }
+    .Property .container .box {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+/* end Property ############################### */
+
+/* start Best #################################*/
+.Best .contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.Best .contain .box{
+    width:25%;
+    height: 400px;
+}
+.Best .contain .spical{
+    background-color: #ed6663;
+    color: #fff;
+}
+.Best .contain .spical h3:hover{
+    color: #0f4c81;
+}
+.Best .contain .fa-house,
+.Best .contain .fa-user-group{
+    margin-top: 120px;
+}
+
+.Best .contain .box i{
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #ed6663;
+}
+.Best .contain .box p{
+    color: var(--p-color);
+}
+.Best .contain .box img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .Best .contain {
+            flex-direction: column;
+    }
+    .Best .contain .box {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .Best .contain {
+            flex-direction: column;
+    }
+    .Best .contain .box {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Best .contain {
+        flex-direction: column;
+    }
+    .Best .contain .box {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Best .contain {
+            flex-direction: row;
+        }
+    .Best .contain .box {
+        width: 25%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .Best .contain {
+            flex-direction: row;
+    }
+    .Best .contain .box {
+        width: 25%;
+    }
+}
+/* end Best #################################*/
+/* start full #################################*/
+.Full .contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.Full .contain .box {
+    width: 50%;
+    height: 400px;
+}
+.Full .contain .box h2{
+    margin: 70px 0 30px;
+}
+.Full .contain .box p{
+    font-size: 20px;
+    color: var(--p-color);
+    margin-bottom: 30px;
+}
+.Full .contain .box a{
+    text-decoration: none;
+    background-color: #ed6663;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+}
+.Full .two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background-color: #ffa372;
+}
+.Full .two .bo{
+    width: 50%;
+    padding: 10px;
+}
+.Full .two .bo h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.Full .two .bo p{
+    color: rgb(221, 221, 221);
+    font-size: 16px;
+}
+.Full .spical{
+    padding:10px 40px;
+}
+.Full .contain .box img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .Full .contain {
+        flex-direction: column;
+    }
+    .Full .contain .box {
+        width: 100%;
+        margin-bottom: 50px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .Full .contain {
+        flex-direction: column;
+    }
+    .Full .contain .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Full .contain {
+        flex-direction: column;
+    }
+    .Full .contain .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Full .contain{
+        flex-direction: row;
+    }
+    .Full .contain .box {
+        width: 50%;
+        height: 400px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Full .contain {
+        flex-direction: row;
+    }
+    .Full .contain .box {
+        width: 50%;
+        height: 400px;
+        margin: 0;
+    }
+}
+/* end full #############################*/
+
+/* start PLACES ########################## */
+.PLACES{
+    padding: 70px 0;
+}
+.PLACES .head{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.PLACES .head p{
+    color: var(--p-color);
+    font-size: 18px;
+}
+.PLACES .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.PLACES .container .box{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    margin-bottom: 30px;
+    transition: all 1s;
+    border-radius: 4px;
+}
+.PLACES .container .box::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: 0;
+    top: 0;
+    background-color: #0e4c8354;
+    transition: all 1s;
+}
+.PLACES .container .box h2{
+    margin-top: 30%;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+}
+.PLACES .container .box .info p{
+    font-size: 20px;
+    color: #fff;
+    display: none;
+    transition: all 1s;
+    position: relative;
+}
+.PLACES .container .box:hover .info p{
+    display: block;
+}
+.PLACES .container .box:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.PLACES .container .box1{
+    background: url(../images/6.jpg) no-repeat center/cover;
+}
+.PLACES .container .box2{
+    background: url(../images/7.jpg) no-repeat center/cover;
+}
+.PLACES .container .box3{
+    background: url(../images/8.jpg) no-repeat center/cover;
+}
+.PLACES .container .box4{
+    background: url(../images/9.jpg) no-repeat center/cover;
+}
+.PLACES .container .box5{
+    background: url(../images/10.jpg) no-repeat center/cover;
+}
+.PLACES .container .box6{
+    background: url(../images/11.jpg) no-repeat center/cover;
+}
+@media only screen and (min-width: 600px) {
+    .PLACES .container .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .PLACES .container .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .PLACES .container .box {
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .PLACES .container .box {
+        width: 350px;
+    }
+}
+/* end PLACES ########################## */
+
+/* start person ##################### */
+.person{
+    padding: 70px 0;
+    background: url(../images/b2.jpg) no-repeat center/cover fixed;
+    height: 70vh;
+}
+.person .container,
+.person .container .men{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.person .container .box{
+    background-color: rgb(245, 244, 244);
+    margin: 10px;
+    padding: 10px;
+}
+.person .container .men{
+    padding: 20px;
+    background-color: #fff;
+}
+.person .container .box p{
+    color: var(--p-color);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px;
+}
+.person .container .box span{
+    color: var(--p-color);
+    font-size: 16px;
+    margin: 10px;
+}
+.person .container .box img{
+    width: 100px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+    .person{
+        height: auto;
+    }
+    .person .container{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .person {
+        height: auto;
+    }
+    .person .container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .person {
+        height: auto;
+    }
+    .person .container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .person {
+        height: auto;
+    }
+    .person .container {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .person {
+        height: auto;
+    }
+    .person .container {
+        flex-direction: row;
+    }
+}
+/* end person ##################### */
+/* start footer ####################### */
+footer{
+    padding: 70px 0 20px;
+    background-color: #212121;
+}
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .container .box{
+    width: 350px;
+    color: rgb(235, 235, 235);
+}
+footer .container .box p,
+footer .container .box ul li{
+    margin-top: 20px;
+    color: var(--p-color);
+}
+footer .container .box p:hover,
+footer .container .box ul li:hover{
+    color: #ed6663;
+}
+footer .end{
+    margin-top: 70px;
+    color: #777;
+}
+@media only screen and (max-width: 600px) {
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    footer .container {
+        flex-direction: row;
+    }
+    footer .container .box {
+        width:350px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    footer .container {
+        flex-direction: row;
+    }
+    footer .container .box {
+        width: 350px;
+        margin-bottom: 0px;
+    }
+}
+/* end footer ####################### */
